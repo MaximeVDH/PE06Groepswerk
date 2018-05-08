@@ -71,8 +71,8 @@
             <Label Content="Year" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
             <Label Content="imdb Rating" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
             <Label Content="Metascore" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
-            <Image MouseEnter="imgTitleASC_MouseEnter" MouseLeave="imgTitleASC_MouseLeave" MouseDown="imgTitleASC_MouseDown" x:Name="imgTitleASC" Margin="100,15,60,116" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
-            <Image MouseEnter="imgTitleDESC_MouseEnter" MouseLeave="imgTitleDESC_MouseLeave" MouseDown="imgTitleDESC_MouseDown" x:Name="imgTitleDESC" Margin="134,15,26,116" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image MouseEnter="imgTitleASC_MouseEnter" MouseLeave="imgTitleASC_MouseLeave" MouseDown="imgTitleASC_MouseDown" x:Name="imgTitleASC" Margin="100,15,60,116" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20" MouseUp="imgTitleASC_MouseUp"/>
+            <Image MouseEnter="imgTitleDESC_MouseEnter" MouseLeave="imgTitleDESC_MouseLeave" MouseDown="imgTitleDESC_MouseDown" x:Name="imgTitleDESC" Margin="134,15,26,116" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20" MouseUp="imgTitleDESC_MouseUp"/>
             <Image x:Name="imgYearASC" Margin="100,49,60,82" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
             <Image x:Name="imgYearDESC" Margin="134,49,26,82" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
             <Image x:Name="imgRatingASC" Margin="100,83,60,48" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>

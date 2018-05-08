@@ -12,3 +12,11 @@ C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\A5 Programmeren 1\Dropbox Opdr
 C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\A5 Programmeren 1\Dropbox Opdrachten\PE06 - Groepswerk\Pmdb.wpf\MoviesLib\obj\Debug\MoviesLib.csproj.CoreCompileInputs.cache
 C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\A5 Programmeren 1\Dropbox Opdrachten\PE06 - Groepswerk\Pmdb.wpf\MoviesLib\obj\Debug\MoviesLib.dll
 C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\A5 Programmeren 1\Dropbox Opdrachten\PE06 - Groepswerk\Pmdb.wpf\MoviesLib\obj\Debug\MoviesLib.pdb
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\bin\Debug\MoviesLib.dll
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\bin\Debug\MoviesLib.pdb
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\bin\Debug\TextFiles.dll
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\obj\Debug\MoviesLib.csprojResolveAssemblyReference.cache
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\obj\Debug\MoviesLib.csproj.CoreCompileInputs.cache
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\obj\Debug\MoviesLib.csproj.CopyComplete
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\obj\Debug\MoviesLib.dll
+C:\Users\Gilles Demeyer\OneDrive\HBO5 Informatica\PE06 Groepswerk\MoviesLib\obj\Debug\MoviesLib.pdb

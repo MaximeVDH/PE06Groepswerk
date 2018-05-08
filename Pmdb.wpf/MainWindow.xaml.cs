@@ -209,6 +209,30 @@ namespace Pmdb.wpf
                 SetImage(imgSortBtn, "sort.png");
             }
         }
+
+        private void imgTitleASC_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (MovieService.filmLijst.Any())
+            {
+                MovieService.filmLijst.Clear();
+            }
+            MovieService MovieServiceBeheer = new MovieService();
+            MovieServiceBeheer.ImporteerSorteerFilms("SELECT * FROM Movies ORDER BY TITLE ASC");
+            lstMovies.ItemsSource = MovieService.filmLijst;
+            lstMovies.Items.Refresh();
+        }
+
+        private void imgTitleDESC_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (MovieService.filmLijst.Any())
+            {
+                MovieService.filmLijst.Clear();
+            }
+            MovieService MovieServiceBeheer = new MovieService();
+            MovieServiceBeheer.ImporteerSorteerFilms("SELECT * FROM Movies ORDER BY TITLE DESC");
+            lstMovies.ItemsSource = MovieService.filmLijst;
+            lstMovies.Items.Refresh();
+        }
     }
 }
  
