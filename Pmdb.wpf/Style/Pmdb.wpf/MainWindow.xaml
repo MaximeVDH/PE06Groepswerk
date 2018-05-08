@@ -1,0 +1,91 @@
+﻿<Window x:Class="Pmdb.wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pmdb.wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="838.066" Width="1083.563" KeyDown="Window_KeyDown">
+        
+
+
+    <Grid Background="#FF484848">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0" Fill="#FF343439" Grid.RowSpan="2"/>
+        <Rectangle Grid.Row="0" Fill="#FF1A1A1A" StrokeThickness="0" />
+        <Rectangle Grid.Column="1" Fill="#FF343439" />
+        <ComboBox x:Name="cmbCollection" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="240" Height="24"/>
+        <ListBox x:Name="lstMovies" HorizontalAlignment="Left" Margin="10,48,0,9.714" Grid.Row="1" Width="240" Background="{x:Null}" BorderBrush="#FF464646" Foreground="LightGray" FontSize="12"
+                 ScrollViewer.VerticalScrollBarVisibility="Hidden" MouseEnter="lstMovies_MouseEnter" MouseLeave="lstMovies_MouseLeave"/>
+        <Grid Grid.Column="1" Margin="30,23,11.429,22.714" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image x:Name="imgCover" Margin="0,500,13,0" MaxWidth="200" MaxHeight="200" MinHeight="50" MinWidth="50" Width="127" HorizontalAlignment="Right"/>
+            <TextBlock x:Name="txbTitle" HorizontalAlignment="Center" Margin="5,0,0,0" TextWrapping="Wrap" Text="sdfasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" VerticalAlignment="Top" Height="87" Width="693" FontSize="36" FontWeight="Bold" FontFamily="Source Sans Pro Black"/>
+            <Label Content="Year:" HorizontalAlignment="Left" Margin="0,107,0,0" VerticalAlignment="Top" Height="41" Width="66" FontSize="24"/>
+            <Label x:Name="lblYear" Content="1923" HorizontalAlignment="Left" Margin="56,107,0,0" VerticalAlignment="Top" Height="41" Width="66" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Runtime:" HorizontalAlignment="Left" Margin="201,107,0,0" VerticalAlignment="Top" Height="41" Width="107" FontSize="24"/>
+            <Label x:Name="lblRunTime" Content="162 min" HorizontalAlignment="Left" Margin="300,107,0,0" VerticalAlignment="Top" Height="41" Width="105" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Imdb Rating:" HorizontalAlignment="Left" Margin="494,107,0,0" VerticalAlignment="Top" Height="41" Width="148" FontSize="24"/>
+            <Label x:Name="lblRating" Content="8.9" HorizontalAlignment="Left" Margin="629,107,0,0" VerticalAlignment="Top" Height="41" Width="56" FontSize="24" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+            <Label Content="Director:" HorizontalAlignment="Left" Margin="0,186,0,0" VerticalAlignment="Top" Height="41" Width="104" FontSize="24"/>
+            <Label x:Name="lblDirector" Content="" HorizontalAlignment="Left" Margin="109,186,0,0" VerticalAlignment="Top" Height="41" Width="576" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Actors:" HorizontalAlignment="Left" Margin="0,232,0,0" VerticalAlignment="Top" Height="41" Width="104" FontSize="24"/>
+            <Label x:Name="lblActors" Content="" HorizontalAlignment="Left" Margin="109,232,0,0" VerticalAlignment="Top" Height="41" Width="576" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Genre:" HorizontalAlignment="Left" Margin="0,278,0,0" VerticalAlignment="Top" Height="41" Width="104" FontSize="24"/>
+            <Label x:Name="lblGenre" Content="" HorizontalAlignment="Left" Margin="109,278,0,0" VerticalAlignment="Top" Height="41" Width="576" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Awards:" HorizontalAlignment="Left" Margin="0,324,0,0" VerticalAlignment="Top" Height="41" Width="104" FontSize="24"/>
+            <Label x:Name="lblAwards" Content="" HorizontalAlignment="Left" Margin="109,324,0,0" VerticalAlignment="Top" Height="41" Width="576" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Synopsis:" HorizontalAlignment="Left" Margin="0,370,0,0" VerticalAlignment="Top" Height="41" Width="148" FontSize="24"/>
+            <TextBlock x:Name="txbSynopsis" HorizontalAlignment="Left" Margin="5,419,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="481"/>
+
+
+
+
+
+        </Grid>
+        <Image x:Name="imgSortBtn" Margin="230,14,10,0" Grid.Row="1" Width="20" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Height="20" VerticalAlignment="Top"
+               MouseEnter="imgSortBtn_MouseEnter" MouseLeave="imgSortBtn_MouseLeave" MouseUp="imgSortBtn_MouseUp" ToolTip="Sort"/>
+        <Image x:Name="imgSearchBtn" Margin="180,14,60,0" Grid.Row="1" Width="20" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Height="20" VerticalAlignment="Top" 
+               MouseEnter="imgSearchBtn_MouseEnter" MouseLeave="imgSearchBtn_MouseLeave"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="24" Margin="10,12,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.047"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.071"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Grid x:Name="grdSortOptions" Grid.Column="1" HorizontalAlignment="Left" Height="151" Grid.Row="1" VerticalAlignment="Top" Width="180" Background="#FF343439" Margin="5,5,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Title" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
+            <Label Content="Year" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
+            <Label Content="imdb Rating" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
+            <Label Content="Metascore" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="94" FontSize="14" Foreground="#FFCECECE"/>
+            <Image MouseEnter="imgTitleASC_MouseEnter" MouseLeave="imgTitleASC_MouseLeave" MouseDown="imgTitleASC_MouseDown" x:Name="imgTitleASC" Margin="100,15,60,116" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image MouseEnter="imgTitleDESC_MouseEnter" MouseLeave="imgTitleDESC_MouseLeave" MouseDown="imgTitleDESC_MouseDown" x:Name="imgTitleDESC" Margin="134,15,26,116" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image x:Name="imgYearASC" Margin="100,49,60,82" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image x:Name="imgYearDESC" Margin="134,49,26,82" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image x:Name="imgRatingASC" Margin="100,83,60,48" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image x:Name="imgRatingDESC" Margin="134,83,26,48" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image x:Name="imgMetaASC" Margin="100,117,60,14" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+            <Image x:Name="imgMetaDESC" Margin="134,117,26,14" MinWidth="20" MinHeight="20" MaxWidth="20" MaxHeight="20" Width="20" Height="20"/>
+        </Grid>
+
+
+
+
+    </Grid>
+
+</Window>
+
+
